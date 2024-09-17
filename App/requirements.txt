@@ -90,6 +90,6 @@ urllib3==1.26.12
 validators==0.20.0
 wasabi==0.10.1
 watchdog==2.1.9
-wheel
 zipp==3.8.1
-pip --upgrade
+setuptools
+wheel
