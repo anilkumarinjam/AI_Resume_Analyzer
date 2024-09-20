@@ -121,7 +121,7 @@ def insertf_data(feed_name,feed_email,feed_score,comments,Timestamp):
 
 st.set_page_config(
    page_title="AI Resume Analyzer",
-   page_icon='./Logo/recommend.png',
+   page_icon='/App/Logo/recommend.png',
 )
 
 
@@ -131,7 +131,7 @@ st.set_page_config(
 def run():
     
     # (Logo, Heading, Sidebar etc)
-    img = Image.open('/Logo/RESUM.png')
+    img = Image.open('./App/Logo/RESUM.png')
     st.image(img)
     st.sidebar.markdown("# Choose Something...")
     activities = ["User", "Feedback", "About", "Admin"]
