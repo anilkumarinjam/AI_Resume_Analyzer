@@ -219,7 +219,8 @@ def run():
         sec_token = secrets.token_urlsafe(12)
         host_name = socket.gethostname()
         ip_add = socket.gethostbyname(host_name)
-        dev_user = os.getlogin()
+        ##dev_user = os.getlogin()
+        dev_user = os.getenv('USER') or os.getenv('LOGNAME') or 'unknown_user'
         os_name_ver = platform.system() + " " + platform.release()
         try:
             g = geocoder.ip('me')
