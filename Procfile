@@ -1,2 +1,2 @@
-release: ./pyreparser/setup.sh
+release: ./pyresparser/setup.sh
 web: streamlit run App/App.py --server.port=$PORT
