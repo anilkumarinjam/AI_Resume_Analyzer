@@ -121,7 +121,7 @@ def insertf_data(feed_name,feed_email,feed_score,comments,Timestamp):
 
 st.set_page_config(
    page_title="AI Resume Analyzer",
-   page_icon='/App/Logo/recommend.png',
+   page_icon='./App/Logo/recommend.png',
 )
 
 
@@ -259,7 +259,7 @@ def run():
                 time.sleep(4)
         
             ### saving the uploaded resume to folder
-            save_image_path = './Uploaded_Resumes/'+pdf_file.name
+            save_image_path = './App/Uploaded_Resumes/'+pdf_file.name
             pdf_name = pdf_file.name
             with open(save_image_path, "wb") as f:
                 f.write(pdf_file.getbuffer())
