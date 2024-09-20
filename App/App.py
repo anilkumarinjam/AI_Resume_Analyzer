@@ -131,7 +131,7 @@ st.set_page_config(
 def run():
     
     # (Logo, Heading, Sidebar etc)
-    img = Image.open('../Logo/RESUM.png')
+    img = Image.open('/Logo/RESUM.png')
     st.image(img)
     st.sidebar.markdown("# Choose Something...")
     activities = ["User", "Feedback", "About", "Admin"]
